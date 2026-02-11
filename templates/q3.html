@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  margin:0;
+  height:100vh;
+  background:#ffe6f2;
+  background-image: radial-gradient(#ff4d88 10%, transparent 11%);
+  background-size:60px 60px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:cursive;
+}
+.container{
+  text-align:center;
+  font-size:30px;
+}
+#no{
+  position:absolute;
+}
+button{
+  font-size:22px;
+  padding:12px 25px;
+  border-radius:12px;
+}
+</style>
+
+<script>
+function moveNo(){
+  document.getElementById("no").style.left =
+    Math.random()*(window.innerWidth-100)+"px";
+  document.getElementById("no").style.top =
+    Math.random()*(window.innerHeight-100)+"px";
+}
+</script>
+</head>
+<body>
+<div class="container">
+  3️⃣ Will you be my Valentine for the rest of my life? 💍❤️<br><br>
+  <a href="/final"><button>YES 💖</button></a><br><br>
+  <button id="no" onmouseover="moveNo()">NO 🙈</button>
+</div>
+</body>
+</html>
